@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="strings.css">
+    <script src="strings.js"></script>
+    <title>Manipulating Strings</title>
+</head>
+<body>
+    <!--This is the div that will hold the slideshow images-->
+    <div class="centered">
+        <!--The Page title-->
+        <h1>The Strings</h1>
+
+    <!--This is where the list will appear -->
+    <div id="test"></div>
+    <script>
+        //array to hold the fruits
+        var arrGameName = [];
+        //prompt the user for 5 fruits. 5 is a random number.
+        for (var i=0; i<5; i++) {
+            //add the fruit to the array
+            arrGameName.push(prompt("Enter a game: ", ""));
+        }
+
+        //sort the array of fruit alphabetically
+        arrGameName.sort();
+        //loop through the array and display the fruits
+        for (var i=0; i<arrGameName.length; i++) {
+            document.getElementById("test").innerHTML += arrGameName[i] + "<BR>";
+        }
+
+        //function to clear the list
+        function ListofWords() {
+            document.getElementById("test").innerHTML = "";
+        }
+    </script>
+    <!--Adding a reset button-->
+    <form>
+        <div class="container-login100-form-btn">
+        <button class="login100-form-btn" type="reset" onclick="ListofWords();">Reset</button>
+    </form>
+
+</body>
+</html>
