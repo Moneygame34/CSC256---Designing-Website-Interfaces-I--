@@ -1,0 +1,59 @@
+/*This is the CSS file to MainFile1*/
+/*h1 and h2 will hold those values*/
+h1 {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+h2 {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+/*This is the body of the code holding the image in the background, etc.*/
+body {
+    background-color: #000000;
+    background-image: url("pexels-michael.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+/*This is the CSS for the form*/
+input{
+    text-align: center;
+    margin: auto;
+}
+/*This is the CSS for the form*/
+form{
+    width: 470px;
+    background: #ff0000;
+    background-position: 55%;
+    padding: 30px 60px;
+    text-align: center;
+}
+/*This is the CSS for the button*/
+button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+/*This is the input value for the password*/
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none
+}
+/*For the style*/
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}

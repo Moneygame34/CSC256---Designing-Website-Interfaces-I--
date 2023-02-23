@@ -1,0 +1,43 @@
+<!--This is assignment Computer Game Elements-->
+<!--Created by Vanessa Bonner-->
+<!--Date: Febraury 22, 2023-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="background.css">
+    <script src="script.js"></script>
+    <title>Computer Game Elements</title>
+</head>
+<body>
+    <h1>Computer Game Elements</h1>
+    <!--This is the form that will be used to collect the information-->
+    <form> 
+        <!--This is showcasing that the text is aligned when you run it.-->
+        <div style="text-align:center"></div>
+        Email: <input placeholder="Enter Email" type="text" id="email" name="Email"></label><br>
+        First Name: <input placeholder="Enter FirstName" type="text" id="fname" name="firstName" ></label><br>
+        Last Name: <input placeholder="Enter LastName" type="text" id="lname" name="lastname"></label><br>
+        Password: <input class="input100" placeholder="Enter Password" id="myInput" name="psw" required></label><br>
+        
+        <div class="container-login100-form-btn">
+        <button class="login100-form-btn" type="button" onclick="myFunction()" >LogIn</button>
+    </form>
+
+    <!-- This is the div that will hold the information entered into the form -->
+    <div id="Userinfo" style="display: none;">
+        <br>
+        <h2>This here is what you entered.</h2> <!--This is the heading that will be used to display the information.-->
+        <br>
+        <label for="theEmail">Email: </label><div id="theEmail"></div>
+        <label for="firstName">First Name: </label><div id="firstName"></div>
+        <label for="lastName">Last Name: </label><div id="lastName"></div>
+        <label for="password">Password: </label><div id="password"></div>
+    </div>
+
+    <!-- An element to toggle between password visibility -->
+<input type="checkbox" onclick="myFunction1()">Show Password <!--This will display the password or if you don't want it too.-->
+</body>
+</html>
